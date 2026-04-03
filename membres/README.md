@@ -21,6 +21,7 @@ npm start
 1. Pousser ce dépôt sur GitHub (`telemann` ou un repo dédié).
 2. Dans le panneau Hostinger, créer une **Web App Node.js**.
 3. Relier le dépôt GitHub et définir :
+   - **Root directory** : `membres`
    - **Start command** : `node server.js`
    - **Node version** : 18+
 4. Définir la variable d'environnement `PORT` si nécessaire (Hostinger l'injecte souvent automatiquement).
