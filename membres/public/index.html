@@ -486,7 +486,7 @@
           <li>Le calendrier des activités</li>
           <li>Les partitions et fichiers de travail</li>
         </ul>
-        <!-- BEGIN:UPDATE_DATE --><p class="update-date">Dernière mise à jour : 04 avril 2026</p><!-- END:UPDATE_DATE -->
+        <!-- BEGIN:UPDATE_DATE --><!-- BEGIN:UPDATE_DATE --><p class="update-date">Dernière mise à jour : 04 avril 2026</p><!-- END:UPDATE_DATE --><!-- END:UPDATE_DATE -->
       </div>
     </div>
 
@@ -511,7 +511,7 @@
       <div class="table-wrap">
         <table>
           <thead><tr><th>Date</th><th>Heure</th><th>Lieu</th><th>Programme</th></tr></thead>
-          <!-- BEGIN:CONCERTS_TABLE --><tbody>
+          <!-- BEGIN:CONCERTS_TABLE --><!-- BEGIN:CONCERTS_TABLE --><tbody>
             <tr><td>Dim. 30 nov. 2025</td><td>16h00</td><td>Saint-Flaive, Ermont</td><td><span class="badge">Prog. A</span></td></tr>
             <tr><td>Dim. 18 jan. 2026</td><td>15h30</td><td>Saint-Urbain, La Garenne-Colombes</td><td><span class="badge">Prog. A</span></td></tr>
             <tr><td>Jeu. 12 mar. 2026</td><td>20h30</td><td>Théâtre de la Garenne-Colombes</td><td><span class="badge">Prog. B</span></td></tr>
@@ -519,13 +519,13 @@
             <tr><td>Dim. 7 juin 2026</td><td>16h00</td><td>Eglise Kilford, Courbevoie</td><td><span class="badge">Prog. C</span></td></tr>
             <tr><td>Dim. 14 juin 2026</td><td>16h00</td><td>Église Saint-Joseph-des-Quatre-Routes, Asnières</td><td><span class="badge">Prog. C</span></td></tr>
             <tr><td>Dim. 21 juin 2026</td><td>16h00</td><td>Bois d'Arcy</td><td></td></tr>
-          </tbody><!-- END:CONCERTS_TABLE -->
+          </tbody><!-- END:CONCERTS_TABLE --><!-- END:CONCERTS_TABLE -->
         </table>
       </div>
 
       <p style="font-size:12px;color:var(--text-dim);font-style:italic">Cliquez pour afficher le détail de chaque programme.</p>
 
-      <!-- BEGIN:PROGRAMME_A --><details class="accordion">
+      <!-- BEGIN:PROGRAMMES --><details class="accordion">
         <summary>
           <div class="acc-left"><span class="acc-title">Programme A</span><span class="acc-sub">Chœur &amp; Orchestre · nov. 2025 &amp; jan. 2026</span></div>
           <span class="acc-chevron">▾</span>
@@ -546,9 +546,9 @@
             <div class="prog-row"><span class="prog-composer">Mozart</span><span class="prog-work">Messe en ut majeur "pour la Saint-Trinité", KV 167 (35')</span></div>
           </div>
         </div>
-      </details><!-- END:PROGRAMME_A -->
+      </details>
 
-      <!-- BEGIN:PROGRAMME_B --><details class="accordion">
+      <details class="accordion">
         <summary>
           <div class="acc-left"><span class="acc-title">Programme B</span><span class="acc-sub">Orchestre · mars 2026</span></div>
           <span class="acc-chevron">▾</span>
@@ -569,9 +569,9 @@
             <div class="prog-row"><span class="prog-composer">Beethoven</span><span class="prog-work">Symphonie No. 7 (40')</span></div>
           </div>
         </div>
-      </details><!-- END:PROGRAMME_B -->
+      </details>
 
-      <!-- BEGIN:PROGRAMME_C --><details class="accordion">
+      <details class="accordion">
         <summary>
           <div class="acc-left"><span class="acc-title">Programme C</span><span class="acc-sub">Orchestre · juin 2026</span></div>
           <span class="acc-chevron">▾</span>
@@ -592,7 +592,7 @@
             <div class="prog-row"><span class="prog-composer">Haydn</span><span class="prog-work">Symphonie No. 87 (25')</span></div>
           </div>
         </div>
-      </details><!-- END:PROGRAMME_C -->
+      </details><!-- END:PROGRAMMES -->
     </div>
 
     <!-- CALENDRIER -->
@@ -675,6 +675,7 @@
 
 <script>
 // BEGIN:EVENTS_ARRAY
+// BEGIN:EVENTS_ARRAY
 const EVENTS = [
   {s:'2025-09-01',e:'2025-09-01',t:'Répétition chœur',l:'École René Guest',type:'choeur'},
   {s:'2025-09-07',e:'2025-09-07',t:'Forum des associations',l:'Place du marché La Garenne-Colombes',type:'autre'},
@@ -755,6 +756,7 @@ const EVENTS = [
   {s:'2026-06-29',e:'2026-06-29',t:'Répétition chœur',l:'École René Guest',type:'choeur'},
   {s:'2026-06-30',e:'2026-06-30',t:'Assemblée générale et pot de fin d\'année',l:'École René Guest',type:'autre'},
 ];
+// END:EVENTS_ARRAY
 // END:EVENTS_ARRAY
 
 const TYPE_CLASS = {choeur:'ev-choeur',orchestre:'ev-orchestre','choeur-orchestre':'ev-choeur-orchestre',concert:'ev-concert',generale:'ev-generale',autre:'ev-autre'};
